@@ -29,6 +29,7 @@ number = Console.ReadLine();
 Console.WriteLine(number.Length);
 
 
+
 // 3 способ
 int GetLenghtNumberToStr(int value) 
 {
