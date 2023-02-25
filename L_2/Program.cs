@@ -1,13 +1,13 @@
 ﻿// Задача 26: Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
 // 456 -> 3  /  78 -> 2 / 89126 -> 5
-
+/*
 // 1 способ
-int GetRange (int value)
+int GetRange(int value)
 {
     int i = 0;
     if (value != 0)
     {
-        while(value > 0)
+        while (value > 0)
         {
             i++;
             value = value / 10;
@@ -22,12 +22,13 @@ a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(GetRange(a));
 
 
+
 // 2 способ
 string number;
 Console.Write("Введите число: ");
 number = Console.ReadLine();
 Console.WriteLine(number.Length);
-
+*/
 
 
 // 3 способ
