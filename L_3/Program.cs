@@ -1,7 +1,7 @@
 ﻿// Задача 28: Напишите программу, которая принимает на вход число M и N и выдаёт произведение чисел от M до N.
 //2,4 -> 24 / 1,5 -> 120
 
-
+/*
 // 1 способ
 int MultNum(int a, int b)
 {
@@ -15,7 +15,6 @@ int MultNum(int a, int b)
 
     return result;
 }
-
 int n;
 int m;
 Console.Clear();
@@ -24,6 +23,7 @@ n = int.Parse(Console.ReadLine());
 Console.Write("введите число m ");
 m = int.Parse(Console.ReadLine());
 Console.WriteLine($"произведение чисел от {Math.Min(n, m)} до {Math.Max(n, m)} = {MultNum(Math.Min(n, m), Math.Max(n, m))}");
+*/
 
 
 // 2 способ
@@ -34,22 +34,18 @@ int GetMultNum(int value, int mult)
     {
         return 0;
     }
-
     // Как обработать ошибку диапазона????!
     if (mult < value)
     {
         Console.Write("Ошибка диапазона! ");
         return -1;
     }
-
     // вычисляет произведение в диапазоне от М до N
     int spamValue = 1;
-
     for (int i = value; i <= mult; i++)
     {
         spamValue *= i;
     }
-
     return spamValue;
 }
 
