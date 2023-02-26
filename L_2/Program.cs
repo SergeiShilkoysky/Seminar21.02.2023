@@ -22,7 +22,6 @@ a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(GetRange(a));
 
 
-
 // 2 способ
 string number;
 Console.Write("Введите число: ");
