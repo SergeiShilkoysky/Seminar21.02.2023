@@ -22,6 +22,7 @@ int GetSumByNumber(int limit)
 //}
 */
 
+
 int a = new Random().Next(0, 10);
 Console.WriteLine($"Число А: {a}");
 a = 3;
