@@ -3,7 +3,6 @@
 //  [1,0,1,1,0,1,0,0]
 
 
-
 void WriteBinRandValue(int[] arr)
 {
     int arrLenght = arr.Length;
