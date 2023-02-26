@@ -2,7 +2,8 @@
 // заполненный нулями и единицами в случайном порядке.
 //  [1,0,1,1,0,1,0,0]
 
-//1 способ
+
+
 void WriteBinRandValue(int[] arr)
 {
     int arrLenght = arr.Length;
