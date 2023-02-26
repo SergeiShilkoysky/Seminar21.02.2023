@@ -3,6 +3,7 @@
 
 /*
 // 1 способ
+
 int MultNum(int a, int b)
 {
     int result;
@@ -51,6 +52,7 @@ int GetMultNum(int value, int mult)
 
 Console.WriteLine($"Произведение чисел равно {GetMultNum(2, 4)}");
 Console.WriteLine($"Произведение чисел равно {GetMultNum(1, 5)}");
+
 
 // эксперементы
 Console.WriteLine($"");
