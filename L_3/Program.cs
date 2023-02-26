@@ -27,6 +27,7 @@ Console.WriteLine($"произведение чисел от {Math.Min(n, m)} д
 */
 
 
+
 // 2 способ
 int GetMultNum(int value, int mult)
 {
