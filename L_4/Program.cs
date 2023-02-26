@@ -2,7 +2,7 @@
 // заполненный нулями и единицами в случайном порядке.
 //  [1,0,1,1,0,1,0,0]
 
-/*1 способ
+//1 способ
 void WriteBinRandValue(int[] arr)
 {
     int arrLenght = arr.Length;
@@ -21,10 +21,6 @@ void PrintArr(int[] arr)
     {
         count++;
         Console.Write($"{num}");
-
-        // в форе форматирование было бы сильно короче, но изначально
-        // формативно не предусматривалось =) можно применить тернарник
-        // но я их не люблю
         if (count == arrLenght)
         {
             Console.Write($"]");
@@ -47,30 +43,3 @@ PrintArr(arrBinNumRand);
 Console.WriteLine($"");
 Console.WriteLine($"Вывод способом древней школы шаолинь");
 Console.WriteLine($"Вывод №2! [{string.Join(", ", arrBinNumRand)}]");
-*/
-
-
-
-int N = 8;
-int min = 0;
-int max = 1;
-
-int[] CreateArray(int N, int min, int max)
-{
-    int[] arr = new int[N];
-    for (int i = 0; i < N; i++)
-    {
-        arr[i] = new Random().Next(min, max + 1);
-    }
-    return arr;
-}
-
-void PrintArray(int[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        System.Console.Write($"{array[i]} ");
-    }
-}
-
-PrintArray(CreateArray(N, min, max));
