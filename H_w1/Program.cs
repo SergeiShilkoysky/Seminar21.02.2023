@@ -1,36 +1,34 @@
 ﻿// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 // 3, 5 -> 243 (3⁵)   /  2, 4 -> 16
 
-Console.WriteLine("input A: ");
-double numA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("input B: ");
-double numB = Convert.ToInt32(Console.ReadLine());
 
-int GetPow(int value)
+
+Console.Write("input A: ");
+int value = Convert.ToInt32(Console.ReadLine());
+Console.Write("input B: ");
+int exponent = Convert.ToInt32(Console.ReadLine());
+
+int GetPow(int value, int exponent)
 {
-    int b = numB;
-    for (int i = 0; i <= b; i++)
-        double pow = Math.Pow(numA, numB);
-}
-Console.WriteLine($"число {numA} ^ {numB} --> {GetPow(pow)}");
-
-
-
-int GetPowValue(int value, int pow)
-{
-    int spamValue = value;
-    for (int i = 1; i < pow; i++)
+    int pow = 1;
+    for (int i = 0; i < exponent; i++)
     {
-        value *= spamValue;
+        pow *= value;
     }
-    return value;
+    return pow;
 }
 
-int value = 3;
-int powValue = 5;
-Console.WriteLine($"Если возвести число {value} в степень {powValue} = {GetPowValue(value, powValue)}");
+bool ValidExponent(int exponent)
+{
+    if (exponent < 0)
+    {
+        Console.WriteLine("Показатель степени не может быть < 0!");
+        return false;
+    }
+    return true;
+}
 
-value = 2;
-powValue = 4;
-Console.WriteLine($"Если возвести число {value} в степень {powValue} = {GetPowValue(value, powValue)}");
-
+if (ValidExponent(exponent))
+{
+  Console.WriteLine($"число {value} ^ {exponent} --> {GetPow(value, exponent)}");  
+}
